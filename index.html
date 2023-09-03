@@ -1,115 +1,338 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Capstone 1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Capstone 1</title>
 
- 	<!-- CSS External Styling -->
-    <link rel="stylesheet" href="./index.css"/>
+    <!-- CSS External Styling -->
+    <link rel="stylesheet" href="./index.css">
 
-	 <!-- Google Fonts -->
-	 <link rel="preconnect" href="https://fonts.googleapis.com">
-	 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
-	<!-- Bootstrap CSS Link -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
+    <!-- Bootstrap CSS Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
+
 <body>
-	
-	<!-- Nav Bar Section -->
-	<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-warning">
-		 <div class="collapse navbar-collapse">
-		   <ul class="navbar-nav">
-		     <li class="nav-item active">
-		        <a class="nav-link" href="#landing">Home<span class="sr-only">(current)</span></a>
-		     </li>
-		     <li class="nav-item active">
-		        <a class="nav-link" href="#">Projects<span class="sr-only">(current)</span></a>
-		     </li>
-		     <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-		          Tools
-		        </a>
-				   <div class="dropdown-menu">
-			          <a class="dropdown-item" href="#">Frontend</a>
-			          <a class="dropdown-item" href="#">Backend</a>
-			          <div class="dropdown-divider"></div>
-			          <a class="dropdown-item" href="#">Fullstack</a>
-				   </div>
-		      </li>
-			   <li class="nav-item active">
-		        <a class="nav-link" href="#">Contact<span class="sr-only">(current)</span></a>
-		     </li>
-		    </ul>
-			    <form class="form-inline my-2 my-lg-0">
-			      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-			      <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-			    </form>
-		 </div>
-	</nav>
 
-	<!-- Main content section -->
-	<div class="container-fluid text-center bg-dark min-vh-100">
-		<div class="row">
+    <!-- Navigation Bar -->
+    <nav id="navbar". class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#projectsid">Projects</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                       aria-expanded="false">
+                        Tools
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#frontend">Frontend</a>
+                        <a class="dropdown-item" href="#mern">MERN</a>
+                        <a class="dropdown-item" href="#othertools">Other Tools</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#contactid">Contact</a>
+                </li>
+            </ul>
+    </nav>
+    <!-- End Navigation Bar -->
 
-			<!-- Landing Section-->
-			<div id="landing" class="col-xl-12 p-0">
-				
-				<div class="container-fluid text-light min-vh-100 p-3">
-					
-					<img src="cat photo.jpg" style="height: 250px;" class="my-5 rounded-circle">
-					<h1>Honey Bautista (Full Stack Developer)</h1>
-					<h2><em>"Bringing Digital Dreams to Life, One Stack at a Time"</em></h2>
+    <!-- Landing Section -->
+    <div id="home" class="container-fluid">
+        <div class="row text-center text-light">
+            <!-- Image Column -->
+            <div class="landing col-xl-6 mt-5">
+                <img src="cat photo.jpg" style="max-width: 100%;" class="my-5 rounded-circle">
+            </div>
 
-					<div class="row mt-5">
-						<div class="offset-md-2 col-md-8">
-							<p>Welcome to <strong><em>Honey Bautista's</strong></em> Full Stack Developer Portfolio</p>
-							<p>Hello, and thank you for visiting my Full Stack Developer portfolio! I'm [Your Name], a passionate and results-driven Full Stack Developer with a strong background in crafting exceptional web solutions. Whether you're seeking a developer for your next project or simply curious about my work, you're in the right place.</p>
-						</div>
-					</div>
+            <!-- Text Column -->
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <div class="col-xl-6">
+                    <h1 class="p-5">Honey Bautista</h1>
+                    <h3 class="mb-5"><em>"Bringing Digital Dreams to Life, One Stack at a Time"</em></h3>
+                    <p>Hello, and thank you for visiting my Full Stack Developer portfolio! I'm a passionate and
+                        results-driven Full Stack Developer with a strong background in crafting exceptional web
+                        solutions. Whether you're seeking a developer for your next project or simply curious about
+                        my work, you're in the right place.</p>
+                </div>
+            </div>
+        </div>
 
-					<!-- Cards Container -->
-					<div class="d-lg-flex justify-content-center p-md-5 text-dark">
+        <!-- Landing Cards Container -->
+        <div id="cardscontainer" class="container-fluid text-center text-dark">
+            <div class="row justify-content-center">
 
-						<!-- Projects Card-->
-						<div class="card col-xl-2 mb-5 mb-xl-0 bg-warning p-3 m-3" style="width: 18rem;">
-							  <img style="height: 250px;"  src="https://cdn-icons-png.flaticon.com/512/1087/1087815.png" alt="...">
-							  <div class="card-body">
-							    <h5 class="card-title">Projects</h5>
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							    <a href="#" class="btn btn-primary">Go to Projects</a>
-								</div>
-						</div>
+                <!-- Projects Card -->
+                <div class="card col-xl-3 col-lg-4 mb-2 bg-warning mx-2 p-3 custom-padding" style="max-width: 300px;">
+                    <img style="height: auto; max-width: 100%" src="https://cdn-icons-png.flaticon.com/512/1087/1087815.png" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Projects</h5>
+                        <a href="#projectsid" class="btn btn-primary">Go to Projects</a>
+                    </div>
+                </div>
 
-						<!-- Tools Card-->
-						<div class="card col-xl-2 mb-5 mb-xl-0 bg-warning p-3 m-3" style="width: 18rem;">
-							  <img style="height: 250px;" src="https://cdn-icons-png.flaticon.com/512/4359/4359812.png" alt="...">
-							  <div class="card-body">
-							    <h5 class="card-title">Tools</h5>
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							    <a href="#" class="btn btn-primary">Go to Tools</a>
-							</div>
-						</div>
+                <!-- Tools Card -->
+                <div class="card col-xl-3 col-lg-4 mb-2 bg-warning mx-2 p-3 custom-padding" style="max-width: 300px;">
+                    <img style="height: auto; max-width: 100%" src="https://cdn-icons-png.flaticon.com/512/4359/4359812.png" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tools</h5>
+                        <a href="#frontend" class="btn btn-primary">Go to Tools</a>
+                    </div>
+                </div>
 
-						<!-- Contact Card-->
-						<div class="card col-xl-2 mb-5 mb-xl-0 bg-warning p-3 m-3" style="width: 18rem;">
-							  <img style="height: 250px;" src="https://cdn-icons-png.flaticon.com/512/3095/3095583.png" class="card-img-top" alt="...">
-							  <div class="card-body">
-							    <h5 class="card-title">Contact</h5>
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							    <a href="#" class="btn btn-primary">Go to Contact</a>
-							</div>
-						</div>
-					</div>		
-				</div>
-			</div>
-		</div>
-	</div>
+                <!-- Contact Card -->
+                <div class="card col-xl-3 col-lg-4 mb-2 bg-warning mx-2 p-3 custom-padding" style="max-width: 300px;">
+                    <img style="height: auto; max-width: 100%" src="https://cdn-icons-png.flaticon.com/512/3095/3095583.png" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Contact Me</h5>
+                        <a href="#contactid" class="btn btn-primary">Send a Message</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Landing Section -->
 
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- Projects Section -->
+    <div id="projectsid" class="container-fluid">
+        <div class="row text-center text-light">
+            <div class="landing col-xl-12 mt-5">
+                <h1 class="mb-5">Projects Section</h1>
+                <div class="d-flex justify-content-center p-md-5 text-dark col-sm-12">
+
+                    <!-- My Projects Card -->
+                    <div class="card col-xl-4 col-lg-6 mb-2 mb-xl-0 bg-warning p-3 m-3" style="max-width: 18rem;">
+                        <img style="height: auto; max-width: 100%;" src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/04/web-developer-portfolio.png" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">My Portfolio</h5>
+                            <p class="card-text">The primary goal of this project was to provide a portfolio where I could apply What I have learned in HTML, CSS and Bootstrap.</p>
+                            <a href="#home" class="btn btn-primary">Go to Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tools Section -->
+    <!-- Frontend Tools -->
+     <div id="frontend" class="container-fluid">
+        <div class="row text-center text-light">
+            <div class="MERN col-xl-12 mt-5">
+                <h1 class="mb-5">Frontend</h1>
+                <div class="d-flex justify-content-center p-md-5 text-dark align-items-center flex-wrap">
+
+                    <!-- HTML Card -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-2 bg-warning mx-2 p-3 custom-padding" style="max-width: 300px;">
+                        <img style="height: auto; max-width: 100%" src="logo-html5.png" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">HTML</h5>
+                            <p class="card-text">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+                        </div>
+                    </div>
+
+                    <!-- CSS Card -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-2 bg-warning mx-2 p-3 custom-padding" style="max-width: 300px;">
+                        <img style="height: auto; max-width: 100%" src="logo-css3.png" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CSS</h5>
+                            <p class="card-text">Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+                        </div>
+                    </div>
+
+                    <!-- Bootstrap -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-2 bg-warning mx-2 p-3 custom-padding" style="max-width: 300px;">
+                        <img style="height: auto; max-width: 100%">
+                        <img style="height: auto; max-width: 100%" src="logo-bootstrap.png" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bootstrap</h5>
+                            <p class="card-text">Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.</p>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-2 bg-warning mx-2 p-3 custom-padding" style="max-width: 300px;">
+                        <img style="height: auto; max-width: 100%" src="logo-javascript.png" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">JavaScript</h5>
+                            <p class="card-text">JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2023, 98.7% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Frontend Tools End -->
+
+
+    <!-- MERN -->
+    <div id="mern" class="container-fluid">
+        <div class="row text-center text-light">
+            <div class="MERN col-xl-12 mt-5">
+                <h1 class="mb-5">MERN</h1>
+                <div class="d-flex justify-content-center p-md-5 text-dark align-items-center flex-wrap">
+
+                    <!-- Mongodb Card -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-2 bg-warning mx-2 p-3 custom-padding" style="max-width: 300px;">
+                        <img style="height: auto; max-width: 100%" src="logo-mongodb.png" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">MongoDB</h5>
+                            <p class="card-text">MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.</p>
+                        </div>
+                    </div>
+
+                    <!-- Express.js Card -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-2 bg-warning mx-2 p-3 custom-padding" style="max-width: 300px;">
+                        <img style="height: auto; max-width: 100%" src="logo-expressjs.png" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Express.Js</h5>
+                            <p class="card-text">Express.js, or simply Express, is a back end web application framework for building RESTful APIs with Node.js, released as free and open-source software under the MIT License. It is designed for building web applications and APIs. It has been called the de facto standard server framework for Node.js.</p>
+                        </div>
+                    </div>
+
+                    <!-- Node.Js -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-2 bg-warning mx-2 p-3 custom-padding" style="max-width: 300px;">
+                        <img style="height: auto; max-width: 100%" src="logo-nodejs.png" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Node.js</h5>
+                            <p class="card-text">Node.js is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more. Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript engine, and executes JavaScript code outside a web browser.</p>
+                        </div>
+                    </div>
+
+                    <!-- React -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-2 bg-warning mx-2 p-3 custom-padding" style="max-width: 300px;">
+                        <img style="height: auto; max-width: 100%" src="logo-react.png" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">React</h5>
+                            <p class="card-text">React is a free and open-source front-end JavaScript library for building user interfaces based on components. It is maintained by Meta and a community of individual developers and companies. React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of MERN -->
+
+    <!-- Other Tools -->
+    <div id="othertools" class="container-fluid">
+        <div class="row text-center text-light">
+            <div class="othertools col-xl-12 mt-5">
+                <h1 class="mb-5">Other Tools</h1>
+                <div class="d-flex justify-content-center p-md-5 text-dark align-items-center flex-wrap">
+
+                    <!-- Heroku -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-2 bg-warning mx-2 p-3 custom-padding" style="max-width: 300px;">
+                        <img style="height: auto; max-width: 100%" src="logo-heroku.png" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Heroku</h5>
+                            <p class="card-text">Heroku is a cloud platform as a service supporting several programming languages. One of the first cloud platforms, Heroku has been in development since June 2007, when it supported only the Ruby programming language, but now supports Java, Node.js, Scala, Clojure, Python, PHP, and Go.</p>
+                        </div>
+                    </div>
+
+                    <!-- Git -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-2 bg-warning mx-2 p-3 custom-padding" style="max-width: 300px;">
+                        <img style="height: auto; max-width: 100%" src="logo-git.png" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Git</h5>
+                            <p class="card-text">Git is a distributed version control system that tracks changes in any set of computer files, usually used for coordinating work among programmers who are collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows.</p>
+                        </div>
+                    </div>
+
+                    <!-- Postman -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-2 bg-warning mx-2 p-3 custom-padding" style="max-width: 300px;">
+                        <img style="height: auto; max-width: 100%" src="logo-postman.png" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Postman</h5>
+                            <p class="card-text">Postman is an API platform for developers. The company is headquartered in San Francisco and maintains an office in Bangalore, where it was founded. As of February 2023, Postman reports having more than 20 million users. Postman simplifies the process of developing APIs that allow taking advantage of automation.</p>
+                        </div>
+                    </div>
+
+                    <!-- Sublime Text -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-2 bg-warning mx-2 p-3 custom-padding" style="max-width: 300px;">
+                        <img style="height: auto; max-width: 100%" src="logo-sublime-text-3.png" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sublime Text</h5>
+                            <p class="card-text">Sublime Text is a shareware text and source code editor available for Windows, macOS, and Linux. It natively supports many programming languages and markup languages. Users can customize it with themes and expand its functionality with plugins, typically community-built and maintained under free-software licenses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Other Tools -->
+
+    <!-- Contact Section -->
+    <div id="contactid" class="container-fluid">
+        <div class="row text-center text-light">
+            <div class="contact col-xl-12 mt-5">
+                <h1 class="mb-5">Contact</h1>
+                <div class="d-lg-flex justify-content-center p-md-5 text-dark">
+                    <form class="col-xl-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="message" rows="4" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#modalDiv">Send Message</button>
+                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Section -->
+    <div class="modal fade" id="modalDiv" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Thank you for contacting us!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Message Successfully Sent</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Section -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2023 Honey Bautista</p>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Bootstrap JavaScript and jQuery Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+            crossorigin="anonymous"></script>
 </body>
 </html>

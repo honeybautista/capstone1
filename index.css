@@ -8,8 +8,14 @@
 /*Google Font*/
 body {
     font-family: 'Open Sans', sans-serif;
+    background-image: url(catbg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.navbar {
+nav {
 	position: fixed;
+	top: 0;
+	width: 100%;
 }
+
