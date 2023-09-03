@@ -8,10 +8,14 @@
 /*Google Font*/
 body {
     font-family: 'Open Sans', sans-serif;
-    background-image: url(catbg.jpg);
+    background-image: url(catbg.jpg); /* Default background image for smaller screens */
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover; /* Ensures the background image covers the entire viewport */
 }
+
+@media (min-width: 1200px) {
+  
 
 nav {
 	position: fixed;
